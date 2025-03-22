@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Vicky</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            background-image: url(bg2.jpg);
+            background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 60%;
+            max-width: 800px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1s forwards;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background: #007BFF;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .links a:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .links a {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <p>
+            I am a passionate <strong>Frontend Developer</strong> with expertise in 
+            <strong>HTML, CSS, JavaScript, and React.js</strong>. I love crafting seamless user experiences 
+            with interactive and visually appealing web applications.
+        </p>
+        <p>
+            Currently, I work as a <strong>Jr. Frontend Developer at RWT Technologies</strong>, 
+            constantly improving my skills in <strong>UI/UX, responsive design, and performance optimization</strong>. 
+            My projects range from games to utility apps, showcasing my ability to bring ideas to life.
+        </p>
+        <p>
+            Always eager to learn and explore new technologies, I aim to bridge the gap between 
+            <strong>design and development</strong> to create smooth and efficient user interactions.
+        </p>
+
+        <div class="links">
+            <a href="https://www.linkedin.com/in/vikash-sharma-059842240" target="_blank">LinkedIn</a>
+            <a href="https://github.com/vikysam9954?tab=repositories" target="_blank">GitHub</a>
+            <a href="https://www.behance.net/vikashsharma81" target="_blank">Behance</a>
+        </div>
+    </div>
+
+</body>
+</html>

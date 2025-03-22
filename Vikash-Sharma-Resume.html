@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikash Kumar Sharma - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: url(bg2.jpg) no-repeat center center/cover;
+            transition: background 0.3s ease-in-out;
+        }
+
+        /* Header */
+        header {
+            background: #1e293b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            background:  rgba(18, 54, 26, 0.655);
+            
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1e293b;
+            padding: 10px 0;
+            top: 0;
+            z-index: 1000;
+            background: rgba(18, 54, 26, 0.655);
+         
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            background: #0d9488;
+            border-radius: 8px;
+            display: inline-block;
+            transition: transform 0.3s, 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            transform: scale(1.1);
+            background: #065f46;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 20px;
+            background: none;
+            border: none;
+            color: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 30px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.06);
+            background: rgba(165, 188, 165, 0.904);
+            
+        }
+
+        h2 {
+            color: #1e293b;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+           
+        }
+
+        /* Contact Section */
+        .contact-links a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
+            color: white;
+            background: #0d9488;
+            text-decoration: none;
+            border-radius: 5px;
+          
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contact-links a:hover {
+            transform: scale(1.1);
+            background: #065f46;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1e293b;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background: rgba(18, 54, 26, 0.655);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background: #1e293b;
+                padding: 10px 0;
+                
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            section {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="heading">Vikash Kumar Sharma</h1>
+        <h3>Frontend Developer | Web Designer | UI/UX Enthusiast</h3>
+    </header>
+
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m a BCA graduate passionate about frontend development, web design, and crafting engaging user experiences.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Languages: C, C++, HTML, CSS, JavaScript, Basic Python</li>
+            <li>Libraries/Frameworks: Bootstrap, React.js, Node.js, Express.js</li>
+            <li>Databases: MongoDB, MySQL, Git, GitHub</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p><strong>Jr. Frontend Developer - RWT Technologies (Feb 2024 - Present)</strong></p>
+        <ul>
+            <li>Developed interactive dashboards with React.js & Chart.js.</li>
+            <li>Built a responsive e-commerce site with real-time search & filtering.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Weather App:</strong> Real-time weather updates using API.</li>
+            <li><strong>Dictionary App:</strong> Fetches definitions, synonyms, and pronunciations.</li>
+            <li><strong>Password Generator:</strong> Generates strong passwords with customizable options.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:vikashkumarsharma1220@gmail.com">📧 Email Me</a>
+            <a href="https://www.linkedin.com/in/vikash-sharma-059842240" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/vikysam9954?tab=repositories" target="_blank">💻 GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vikash Kumar Sharma. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Smooth scrolling for navigation links
+            const links = document.querySelectorAll(".nav-links a");
+            links.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    const section = document.querySelector(this.getAttribute("href"));
+                    section.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+
+            // Mobile menu toggle
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+            menuToggle.addEventListener("click", function() {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

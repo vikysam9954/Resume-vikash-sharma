@@ -3,86 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vikash Kumar Sharma - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>User Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking CSS file -->
 </head>
+
 <body>
-    <header>
-        <h1 id="heading">Vikash Kumar Sharma</h1>
-        <p><h3>Frontend Developer | Web Designer | UI/UX Enthusiast</h3></p>
-        <nav>
-            <ul>
-               <button id="button"> <li><a href="#about">About</a></li></button> 
-               <button id="button">  <li><a href="#skills">Skills</a></li></button>
-                <button id="button">  <li><a href="#experience">Experience</a></li></button>
-                    <button id="button"> <li><a href="#projects">Projects</a></li></button>
-                        <button id="button"><li><a href="#contact">Contact</a></li></button>
-                    
-                </ul>
-        </nav>
-    </header>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="contact me .html">Contact</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="Vikash-Sharma-Resume.html">Resume</a></li>
+    </ul>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m a BCA graduate with a strong passion
-             for frontend development, web design, 
-             and crafting engaging, interactive user experiences. 
-             I love turning ideas into visually appealing and functional websites,
-              focusing on clean design, smooth user interactions, and seamless performance. 
-              Whether it's coding responsive layouts, experimenting with animations, or improving usability, I enjoy bringing creativity and technology together 
-            to build immersive web experiences.</p>
-    </section>
+    <h1><strong>Feedback !</strong></h1>
+    
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Languages: C, C++, HTML, CSS, JavaScript, Basic Python  </li>
-            <li>Libraries/Frameworks: Bootstrap, React.js, Node.js, Express.js</li>
-            <li>Coursework: Data Structures, OOPS, Operating Systems, DBMS, AI, ML, Blockchain</li>
-            <li>Tools/Databases: MongoDB, MySQL, Git, GitHub, MS Excel</li>
-        </ul>
-    </section>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <p><strong> Jr.Frontend Developer - RWT Technologies (Feb 2024 - Present)</strong></p>
-        <ul>
-            <li>Developed interactive dashboards with React.js & Chart.js.</li>
-            <li>Built a responsive e-commerce site with real-time search & filtering.</li>
-            <li>Integrated RESTful APIs for dynamic content fetching.</li>
-        </ul>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message " required></textarea><br><br>
 
-        <p><strong>Web Designing Intern - Network Bulls (Nov 2022 - May 2023)</strong></p>
-        <ul>
-            <li>Created a weather app with real-time API integration.</li>
-            <li>Designed a responsive portfolio website following UI/UX principles.</li>
-            <li>Developed a note-taking app with local storage functionality.</li>
-        </ul>
-    </section>
+   
+        <button type="submit">Submit </button>
+    </form>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Weather App:</strong> Real-time weather updates using API.</li>
-            <li><strong>Dictionary App:</strong> Fetches definitions, synonyms, and pronunciations.</li>
-            <li><strong> Games:</strong> Paper-scissor , Ludo Basic ,SNAKE Game , Tik tac toe ,Classic interactive  game with real-time movement.</li>
-            <li><strong>Password Generator:</strong> Generates strong passwords with customizable options.</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:vikashkumarsharma1220@gmail.com">vikashkumarsharma1220@gmail.com</a></p>
-        <p>Phone: +91-8825211919</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/vikash-sharma-059842240" target="_blank">My LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/vikysam9954?tab=repositories" target="_blank">My GitHub</a></p>
-        <p>Behance: <a href="https://www.behance.net/vikashsharma81" target="_blank">My Behance</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Vikash Kumar Sharma. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <!-- Linking JavaScript file -->
+ 
+    <script src="app.js"></script>
 </body>
 </html>
